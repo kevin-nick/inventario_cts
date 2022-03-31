@@ -7,7 +7,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DatatableComponent } from './components/datatable/datatable.component';
 import { InventarioComponent } from './components/inventario/inventario.component';
 import { DataTablesModule } from 'angular-datatables';
-
+import { HttpClientModule } from '@angular/common/http';
+ 
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { DataTablesModule } from 'angular-datatables';
   imports: [
     CommonModule,
     DataTablesModule,
-    WrapperRoutingModule
+    WrapperRoutingModule,
+    HttpClientModule
   ]
 })
+
 export class WrapperModule { }
