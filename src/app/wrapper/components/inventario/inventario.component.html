@@ -1,1 +1,43 @@
-<p>inventario todo el contenido</p>
+<ng-template #Categorias>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+        <!-- <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <p>primer modal</p>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+            Save
+            </button> -->
+        <button type="button" class="btn btn-primary" data-bs-dismis="modal">Guardar</button>
+    </div>
+</ng-template>
+
+<ng-template #Productos>
+
+</ng-template>
+
+<ng-template #modelos>
+
+</ng-template>
+
+<div class="container">
+    <div class="container fondo">
+        <div class="row align-items-center">
+            <div class="col offset-md-6">
+                <input type="submit" class="btn btn-primary m-3" value="agregar modelos" (click)="open(Categorias)">
+                <input type="submit" class="btn btn-primary m-3" value="agregar productos">
+                <input type="submit" class="btn btn-primary m-3" value="agregar categorias">
+            </div>
+        </div>
+        <div class="">
+            <app-datatable></app-datatable>
+        </div>
+    </div>
+</div>

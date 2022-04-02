@@ -20,10 +20,10 @@
                     <i class='bx bxs-chevron-down arrow' (click)="isdropdown = !isdropdown"></i>
                 </div>
                 <ul class="sub-menu">
-                    <link rel="stylesheet" href="">
-                    <li><a href="/dashboard/inventario">HTML & CSS</a></li>
-                    <li><a [routerLink]="['/dashboard/inventario']">JavaScript</a></li>
-                    <li><a href="#">PHP & MySQL</a></li>
+                    <li><a href="/dashboard/inventario">Altas y Bajas </a></li>
+                    <li><a href="/dashboard/inventario">Almacen</a></li>
+                    <li><a [routerLink]="['/dashboard/inventario']">Asignados</a></li>
+                    <!-- <li><a href="#">PHP & MySQL</a></li> -->
                 </ul>
             </li>
             <li>
@@ -35,10 +35,8 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Posts</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Login Form</a></li>
-                    <li><a href="#">Card Design</a></li>
+                    <li><a href="#">Empleados</a></li>
+                    <li><a href="#">Usuarios</a></li>
                 </ul>
             </li>
             <li>
@@ -50,7 +48,6 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Posts</a></li>
                     <li><a href="#">Web Design</a></li>
                     <li><a href="#">Login Form</a></li>
                     <li><a href="#">Card Design</a></li>
@@ -93,7 +90,7 @@
         <div class="row home-content2 separador">
             <div class="mb-2">
                 <input type="submit" class="btn btn-primary" value="Importar">
-                <input type="submit" class="btn btn-primary" value="Eportar">
+                <input type="submit" class="btn btn-primary" value="Exportar">
             </div>
             <app-datatable></app-datatable>
         </div>
