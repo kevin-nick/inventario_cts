@@ -8,6 +8,8 @@ import { DatatableComponent } from './components/datatable/datatable.component';
 import { InventarioComponent } from './components/inventario/inventario.component';
 import { DataTablesModule } from 'angular-datatables';
 import { HttpClientModule } from '@angular/common/http';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { SidanavComponent } from './components/sidanav/sidanav.component';
  
 
 @NgModule({
@@ -15,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
     WrapperComponent,
     DashboardComponent,
     DatatableComponent,
-    InventarioComponent
+    InventarioComponent,
+    UsuariosComponent,
+    SidanavComponent
   ],
   imports: [
     CommonModule,
