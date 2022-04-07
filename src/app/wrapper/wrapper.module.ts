@@ -10,6 +10,7 @@ import { DataTablesModule } from 'angular-datatables';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { SidanavComponent } from './components/sidanav/sidanav.component';
+import { AlmacenComponent } from './components/almacen/almacen.component';
  
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SidanavComponent } from './components/sidanav/sidanav.component';
     DatatableComponent,
     InventarioComponent,
     UsuariosComponent,
-    SidanavComponent
+    SidanavComponent,
+    AlmacenComponent
   ],
   imports: [
     CommonModule,

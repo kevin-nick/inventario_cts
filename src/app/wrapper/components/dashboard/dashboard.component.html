@@ -1,8 +1,42 @@
+<ng-template #Categorias class="modal">
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+        <!-- <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="close()"></button>
+    </div>
+    <div class="modal-body">
+        <div class="mt-1">
+            <form class="text-center border border-light p-2">
+                <p class="h4 mb-4">Empleados</p>
+                <!-- Name -->
+                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+                <!-- Email -->
+                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <!-- Subject -->
+                <label>ELIJA UN PUESTOS:</label>
+                <select class="form-control mb-4">
+                      <option value="" disabled>SELECIONE UNA OPCION...</option>
+                      <option value="1" selected>RECEPCION</option>
+                      <option value="2">PROGRAMADOR</option>
+                      <option value="3">CORDINADOR</option>
+                      <option value="4">CTO</option>
+                    </select>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+            Save
+            </button> -->
+        <button type="button" class="btn btn-primary" data-bs-dismis="modal">Guardar</button>
+    </div>
+</ng-template>
+
 <div class="row">
     <div class="col-sm">
         <app-sidanav></app-sidanav>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-9" style="width: 1180px; height: 1500px;">
         <div class="card">
             <div class="card-header">
                 <div class="home-content separador">
@@ -23,6 +57,7 @@
                         <div class="mb-2">
                             <input type="submit" class="btn btn-primary" value="Importar">
                             <input type="submit" class="btn btn-primary" value="Exportar">
+                            <input type="submit" class="btn btn-primary m-3" value="agregar modelos" (click)="open(Categorias)">
                         </div>
                         <app-datatable></app-datatable>
                     </div>

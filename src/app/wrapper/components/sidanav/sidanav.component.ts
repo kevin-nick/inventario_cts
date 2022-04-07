@@ -8,11 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SidanavComponent implements OnInit {
   isExpanded: boolean = false; 
   isdropdown: boolean = false;
+  isUsuarios: boolean = false;
+  isProbedores: boolean = false;
+
   @Input() childMessage: string | undefined;
   
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -10,8 +10,9 @@ import {NgbModal, ModalDismissReasons, NgbModalRef} from '@ng-bootstrap/ng-boots
 export class InventarioComponent implements OnInit {
   closeResult = '';
   closeModal: boolean = false;
-  @ViewChild('closebutton') closebutton: any;
-  
+
+  @ViewChild('Categorias') modal: any;
+
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
@@ -25,8 +26,8 @@ export class InventarioComponent implements OnInit {
     });
   }
 
-  close(): string{
-    return 'by pressing ESC';
+  close(content:any){
+    this.modalService.dismissAll();
   }
 
   private getDismissReason(reason: any): string {
@@ -38,5 +39,4 @@ export class InventarioComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-
 }
